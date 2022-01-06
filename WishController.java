@@ -1,4 +1,4 @@
-package com.nt.controller1;
+package com.nt.controller;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -25,6 +25,7 @@ public class WishController {
 		String wmsg=service.generateWishMsg();
 		//create and return ModelAndView obj
 		return new ModelAndView("result","wresult",wmsg);
+		System.out.printl("Changed done");
 	}
 
 }
